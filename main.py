@@ -1,5 +1,6 @@
 #David
 import tkinter as tk
+from tkinter import font
 import tkinter.ttk as ttk
 #words = re.sub("[^\w]", " ",  mystr).split()
 #Converts string to list of words seperated by spaces.
@@ -14,13 +15,14 @@ class SpeedyReady:
         style.configure("Custom.TLabel",foreground="white",
                                         background="red",
                                         padding=[10, 10, 10, 10],
+                                        font=("Helvetica", 25),
                                         relief = "raised")
-        word0 = ttk.Label(frame, text = "Hello World", style = "Custom.TLabel")
-        word0.pack(padx = 5, pady = 5)
-        word1 = ttk.Label(frame, text = "Hello World", style = "Custom.TLabel")
-        word1.pack(padx = 5, pady = 5)
-        word2 = ttk.Label(frame, text = "Hello World", style = "Custom.TLabel")
-        word2.pack(padx = 5, pady = 5)
+        label0 = ttk.Label(frame, text=self.text0, style="Custom.TLabel")
+        label0.pack(padx = 5, pady = 5)
+        label1 = ttk.Label(frame, text=self.text1, style="Custom.TLabel")
+        label1.pack(padx = 5, pady = 5)
+        label2 = ttk.Label(frame, text=self.text2, style="Custom.TLabel")
+        label2.pack(padx = 5, pady = 5)
         frame.pack(padx = 5, pady = 5)
 
 root = tk.Tk()
