@@ -11,6 +11,7 @@ An average person can read far more quickly if they do not need to move their ey
 * "Jump" back by a certain number of words.
 * ? Words play only when certain key is held down.
 * ? Full screen mode
+* User can input text
 
 ## Use Cases
 ### Use Case #1:
