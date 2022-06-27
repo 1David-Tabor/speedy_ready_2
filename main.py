@@ -28,5 +28,10 @@ class SpeedyReady(tk.Tk):
         label2 = tk.Label(self.readingFrame, font=myFont, text=self.text2)
         label2.pack(padx = 5, pady = 5)
 
+    def inputTabSetup(self):
+        entryField = tk.Text(self.inputFrame, height=8)
+        entryField.pack()
+        
+
 window = SpeedyReady()
 window.mainloop()
